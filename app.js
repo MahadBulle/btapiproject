@@ -41,7 +41,7 @@ app.use('/homesetting', homeSettingRoutes)
 // app.use('/gallery', galleryRoutes)
 app.use('/ourclient', ourClientRoutes)
 // app.use('/about', aboutRoutes)
-app.use('/contact', contactRoutes)
+// app.use('/contact', contactRoutes)
 app.use('/services', servicesRoutes)
 
 
