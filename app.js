@@ -11,7 +11,7 @@ const homeSettingRoutes = require('./routes/PagesRoutes/homeSettingRouter')
 // const galleryRoutes = require('./routes/PagesRoutes/galleryRoute')
 const ourClientRoutes = require('./routes/PagesRoutes/ourClientRoute')
 // const aboutRoutes = require('./routes/PagesRoutes/aboutRoute')
-const contactRoutes = require('./routes/PagesRoutes/contactRout')
+// const contactRoutes = require('./routes/PagesRoutes/contactRout')
 const servicesRoutes = require('./routes/PagesRoutes/ourServicesRoute')
 
 
