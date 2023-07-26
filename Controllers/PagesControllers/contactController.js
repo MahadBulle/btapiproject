@@ -1,7 +1,7 @@
 const { ContactModel, contactValidation } = require('../../Models/PagesModels/ContactModel')
 // get start
 const GetContact = async (req, res) => {
-  res.status(200).send("hello iam contact")
+  res.send("hello iam contact")
 // try {
 //   // const hellGetContact = await ContactModel.find()
 //   res.status(200).send("hello iam contact")
