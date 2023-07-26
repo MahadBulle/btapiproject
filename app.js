@@ -32,7 +32,7 @@ mongoose.connect('mongodb+srv://generator:HkAXEuNAexSC358T@cluster0.fonguby.mong
   .then(() => console.log('Connected!'));
 
   app.get('/',(req, res) => {
-    res.send("wuu tijaabo")
+    res.send("wuu tijaaboo")
   })
 app.use('/houses', housesRoutes)
 app.use('/users', usersRoutes)
