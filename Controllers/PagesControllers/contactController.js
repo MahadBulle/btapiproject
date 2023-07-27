@@ -1,19 +1,24 @@
 const { ContactModel, contactValidation } = require('../../Models/PagesModels/ContactModel')
 // get start
 const GetContact = async (req, res) => {
-  res.send("hello iam contact")
-// try {
-//   // const hellGetContact = await ContactModel.find()
-//   res.status(200).send("hello iam contact")
-// } catch (error) {
-//   res.send({errors:errors})
-// }
+  // res.send("hello iam contact")
+try {
+  // const hellGetContact = await ContactModel.find()
+  const hellGetContact = await ContactModel.find()
+  res.status(200).send(hellGetContact)
+} catch (error) {
+  res.send({errors:error})
+}
 }
 // get ended
 // get ById start
 const GetContactById = async (req, res) => {
-  const hellGetContactById = await ContactModel.findById(req.params.id)
+  try {
+    const hellGetContactById = await ContactModel.findById(req.params.id)
   res.status(200).send(hellGetContactById)
+  } catch (error) {
+    res.send({errors:error})
+  }
 }
 // get ById ended
 // post start

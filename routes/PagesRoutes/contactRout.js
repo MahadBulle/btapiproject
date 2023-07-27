@@ -4,15 +4,16 @@ const router = express.Router()
 
 // const contactController = require('../../Controllers/PagesControllers/contactController')
 // const contactController = require('../../Controllers/PagesControllers/contactController')
-const {GetContactById,PostContact,PutContact} = require('../../Controllers/PagesControllers/contactController')
-router.get('/',(req,res) => {
+const {GetContact,GetContactById,PostContact,PutContact} = require('../../Controllers/PagesControllers/contactController')
+// router.get('/',(req,res) => {
 
-    res.send("waa uu shaqeenaa hada")
-})
+//     res.send("waa uu shaqeenaa hada")
+// })
+router.get('/',GetContact)
 
 router.get('/:id',GetContactById)
 
-router.post('/', PostContact)
+router.post('/', PostContact) 
 
 router.put('/:id',PutContact)
 
