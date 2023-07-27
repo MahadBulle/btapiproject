@@ -4,7 +4,7 @@ const router = express.Router()
 
 // const contactController = require('../../Controllers/PagesControllers/contactController')
 // const contactController = require('../../Controllers/PagesControllers/contactController')
-const {GetContact,GetContactById,PostContact,PutContact} = require('../../Controllers/PagesControllers/contactController')
+var {GetContact,GetContactById,PostContact,PutContact} = require('../../Controllers/PagesControllers/contactController')
 // router.get('/',(req,res) => {
 
 //     res.send("waa uu shaqeenaa hada")
