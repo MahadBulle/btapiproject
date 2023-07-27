@@ -172,35 +172,35 @@ describe('testing about us  crud operations', function () {
 })
 
 // contact us api  test
-// describe('testing contact  api calls crud operations', function () {
-//   it('get contact us api data', async () => {
-//     const resp = await request(app).get('/contact')
-//     expect(resp.statusCode).toBe(200)
-//   })
-//   it('insert contact  api', async () => {
-//     const reqs = await request(app).post('/contact').send({
-//       Name: 'Mahad',
-//       Phone: '6346363',
-//       Message: 'asc walal'
+describe('testing contact  api calls crud operations', function () {
+  it('get contact us api data', async () => {
+    const resp = await request(app).get('/contact')
+    expect(resp.statusCode).toBe(200)
+  })
+  it('insert contact  api', async () => {
+    const reqs = await request(app).post('/contact').send({
+      Name: 'Mahad',
+      Phone: '6346363',
+      Message: 'asc walal'
 
-//     })
-//     expect(reqs.statusCode).toBe(201)
-//     userId = reqs.body.contactPosting._id
-//   })
-//   it('get contact api by id', async () => {
-//     const resp = await request(app).get(`/contact/${userId}`)
-//     expect(resp.statusCode).toBe(200)
-//   })
-//   it('update contact us', async () => {
-//     const Update = await request(app).put(`/contact/${userId}`).send({
-//       Name: 'Mahad cali',
-//       Phone: '6346363',
-//       Message: 'asc walall'
-//     })
+    })
+    expect(reqs.statusCode).toBe(201)
+    userId = reqs.body.contactPosting._id
+  })
+  it('get contact api by id', async () => {
+    const resp = await request(app).get(`/contact/${userId}`)
+    expect(resp.statusCode).toBe(200)
+  })
+  it('update contact us', async () => {
+    const Update = await request(app).put(`/contact/${userId}`).send({
+      Name: 'Mahad cali',
+      Phone: '6346363',
+      Message: 'asc walall'
+    })
 
-//     expect(Update.statusCode).toBe(200)
-//   })
-// })
+    expect(Update.statusCode).toBe(200)
+  })
+})
 
 // test ourourclient api
 describe('testing ourourclient crud operations', function () {
